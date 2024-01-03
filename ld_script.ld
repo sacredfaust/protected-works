@@ -1238,6 +1238,34 @@ SECTIONS {
         sound/songs/midi/ph_nurse_blend.o(.rodata);
         sound/songs/midi/ph_nurse_held.o(.rodata);
         sound/songs/midi/ph_nurse_solo.o(.rodata);
+        sound/songs/midi/mus_new_bark.o(.rodata);
+        sound/songs/midi/mus_route29.o(.rodata);
+        sound/songs/midi/mus_elms_lab.o(.rodata);
+        sound/songs/midi/mus_cherrygrove.o(.rodata);
+        sound/songs/midi/mus_route30.o(.rodata);
+        sound/songs/midi/mus_violet.o(.rodata);
+        sound/songs/midi/mus_johto_pokecenter.o(.rodata);
+        sound/songs/midi/mus_johto_pokemart.o(.rodata);
+        sound/songs/midi/mus_johto_gym.o(.rodata);
+        sound/songs/midi/mus_union_cave.o(.rodata);
+        sound/songs/midi/mus_ruins_of_alph.o(.rodata);
+        sound/songs/midi/mus_sprout_tower.o(.rodata);
+        sound/songs/midi/mus_azalea.o(.rodata);
+        sound/songs/midi/mus_dark_cave.o(.rodata);
+        sound/songs/midi/mus_route36.o(.rodata);
+        sound/songs/midi/mus_goldenrod.o(.rodata);
+        sound/songs/midi/mus_johto_gamecorner.o(.rodata);
+        sound/songs/midi/mus_national_park.o(.rodata);
+        sound/songs/midi/mus_route38.o(.rodata);
+        sound/songs/midi/mus_ecruteak.o(.rodata);
+        sound/songs/midi/mus_dance_theater.o(.rodata);
+        sound/songs/midi/mus_burned_tower.o(.rodata);
+        sound/songs/midi/mus_tin_tower.o(.rodata);
+        sound/songs/midi/mus_battle_tower.o(.rodata);
+        sound/songs/midi/mus_lake_of_rage.o(.rodata);
+        sound/songs/midi/mus_johto_rocket.o(.rodata);
+        sound/songs/midi/mus_dragons_den.o(.rodata);
+        sound/songs/midi/mus_route26.o(.rodata);
     } > ROM =0
 
     lib_rodata :

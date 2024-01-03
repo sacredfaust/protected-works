@@ -1262,3 +1262,87 @@ $(MID_SUBDIR)/se_m_leer.s: %.s: %.mid
 
 $(MID_SUBDIR)/se_dex_search.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G127 -v100 -P5
+
+$(MID_SUBDIR)/mus_new_bark.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_route29.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V070
+
+$(MID_SUBDIR)/mus_elms_lab.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_cherrygrove.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_route30.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_violet.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_johto_pokecenter.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V100
+
+$(MID_SUBDIR)/mus_johto_pokemart.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V055
+
+$(MID_SUBDIR)/mus_johto_gym.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V070
+
+$(MID_SUBDIR)/mus_union_cave.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V075
+
+$(MID_SUBDIR)/mus_ruins_of_alph.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_sprout_tower.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_azalea.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_dark_cave.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V075
+
+$(MID_SUBDIR)/mus_route36.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V075
+
+$(MID_SUBDIR)/mus_goldenrod.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V075
+
+$(MID_SUBDIR)/mus_johto_gamecorner.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V075
+
+$(MID_SUBDIR)/mus_national_park.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_route38.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V060
+
+$(MID_SUBDIR)/mus_ecruteak.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_dance_theater.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_burned_tower.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_tin_tower.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_battle_tower.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_lake_of_rage.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_johto_rocket.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_dragons_den.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080
+
+$(MID_SUBDIR)/mus_route26.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V050
