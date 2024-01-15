@@ -1,5 +1,4 @@
 {
-  "layouts_table_label": "gMapLayouts",
   "group_order": [
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_IndoorLittleroot",
@@ -791,7 +790,7 @@
     "FuchsiaCity_House3"
   ],
   "gMapGroup_CinnabarIsland": [
-    "NewMap1",
+    "CinnabarIsland",
     "CinnabarIsland_Gym",
     "PokemonLab_Entrance",
     "PokemonLab_Lounge",

@@ -713,7 +713,7 @@
 #define MAP_FUCHSIA_CITY_HOUSE3               (19 | (41 << 8))
 
 // gMapGroup_CinnabarIsland
-#define MAP_NEW_MAP1                          (0 | (42 << 8))
+#define MAP_CINNABAR_ISLAND                   (0 | (42 << 8))
 #define MAP_CINNABAR_ISLAND_GYM               (1 | (42 << 8))
 #define MAP_POKEMON_LAB_ENTRANCE              (2 | (42 << 8))
 #define MAP_POKEMON_LAB_LOUNGE                (3 | (42 << 8))

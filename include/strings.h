@@ -3026,4 +3026,8 @@ extern const u8 gText_BoxName[];
 extern const u8 gText_PkmnsNickname[];
 extern const u8 gText_TellHimTheWords[];
 
+//Custom
+extern const u8 gText_Kanto[];
+extern const u8 gText_Johto[];
+
 #endif // GUARD_STRINGS_H

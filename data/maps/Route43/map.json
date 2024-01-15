@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_MAHOGANY_TOWN",
       "offset": 0,
-      "map": "MAP_MAHOGANY_TOWN"
+      "direction": "down"
     },
     {
-      "direction": "up",
+      "map": "MAP_LAKE_OF_RAGE",
       "offset": -10,
-      "map": "MAP_LAKE_OF_RAGE"
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -33,28 +33,28 @@
       "y": 45,
       "elevation": 0,
       "dest_map": "MAP_ROUTE43_GATEHOUSE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 23,
       "y": 50,
       "elevation": 0,
       "dest_map": "MAP_ROUTE43_GATEHOUSE",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 10,
       "y": 71,
       "elevation": 0,
       "dest_map": "MAP_MAHOGANY_TOWN_GATEHOUSE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 11,
       "y": 71,
       "elevation": 0,
       "dest_map": "MAP_MAHOGANY_TOWN_GATEHOUSE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

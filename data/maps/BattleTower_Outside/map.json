@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_ROUTE40",
       "offset": -4,
-      "map": "MAP_ROUTE40"
+      "direction": "down"
     },
     {
-      "direction": "right",
+      "map": "MAP_OLIVINE_CITY",
       "offset": 9,
-      "map": "MAP_OLIVINE_CITY"
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -33,21 +33,21 @@
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_BATTLE_TOWER_LOBBY",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 10,
       "y": 31,
       "elevation": 0,
       "dest_map": "MAP_BATTLE_TOWER_GATEHOUSE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 11,
       "y": 31,
       "elevation": 0,
       "dest_map": "MAP_BATTLE_TOWER_GATEHOUSE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

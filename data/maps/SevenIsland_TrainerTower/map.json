@@ -14,9 +14,9 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_SEVEN_ISLAND",
       "offset": 48,
-      "map": "MAP_SEVEN_ISLAND"
+      "direction": "down"
     }
   ],
   "object_events": [
@@ -28,7 +28,7 @@
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_SEVEN_ISLAND_TRAINER_TOWER_LOBBY",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [

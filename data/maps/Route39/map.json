@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "right",
+      "map": "MAP_ROUTE38",
       "offset": 4,
-      "map": "MAP_ROUTE38"
+      "direction": "right"
     },
     {
-      "direction": "down",
+      "map": "MAP_OLIVINE_CITY",
       "offset": -10,
-      "map": "MAP_OLIVINE_CITY"
+      "direction": "down"
     }
   ],
   "object_events": [
@@ -33,14 +33,14 @@
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_MOO_MOO_FARM_BARN",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 11,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_MOO_MOO_FARM",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "up",
+      "map": "MAP_ROUTE32",
       "offset": -2,
-      "map": "MAP_ROUTE32"
+      "direction": "up"
     },
     {
-      "direction": "left",
+      "map": "MAP_AZALEA_TOWN",
       "offset": 0,
-      "map": "MAP_AZALEA_TOWN"
+      "direction": "left"
     }
   ],
   "object_events": [
@@ -33,7 +33,7 @@
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_UNION_CAVE_1F",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [
