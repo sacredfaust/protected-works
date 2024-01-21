@@ -22,21 +22,21 @@
       "y": 19,
       "elevation": 0,
       "dest_map": "MAP_NATIONAL_PARK_GATEHOUSE_EAST",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 12,
       "y": 49,
       "elevation": 0,
       "dest_map": "MAP_NATIONAL_PARK_GATEHOUSE_SOUTH",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 13,
       "y": 49,
       "elevation": 0,
       "dest_map": "MAP_NATIONAL_PARK_GATEHOUSE_SOUTH",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

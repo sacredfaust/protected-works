@@ -14,24 +14,24 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "right",
+      "map": "MAP_ROUTE8",
       "offset": 10,
-      "map": "MAP_ROUTE8"
+      "direction": "right"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE5",
       "offset": 0,
-      "map": "MAP_ROUTE5"
+      "direction": "up"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE7",
       "offset": 10,
-      "map": "MAP_ROUTE7"
+      "direction": "left"
     },
     {
-      "direction": "down",
+      "map": "MAP_ROUTE6",
       "offset": 12,
-      "map": "MAP_ROUTE6"
+      "direction": "down"
     }
   ],
   "object_events": [
