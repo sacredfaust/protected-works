@@ -625,7 +625,7 @@ gStdScripts_End::
     .include "data/maps/NewBarkTown_PlayersHouse_1F/scripts.inc"
     .include "data/maps/NewBarkTown_PlayersHouse_2F/scripts.inc"
     .include "data/maps/NewBarkTown_ProfessorElmsLab/scripts.inc"
-    .include "data/maps/NewMap1/scripts.inc"
+    .include "data/maps/CinnabarIsland/scripts.inc"
     .include "data/maps/NewMap2/scripts.inc"
     .include "data/maps/NewMauville_Entrance/scripts.inc"
     .include "data/maps/NewMauville_Inside/scripts.inc"

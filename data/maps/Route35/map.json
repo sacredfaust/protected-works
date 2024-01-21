@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_GOLDENROD_CITY",
       "offset": -11,
-      "map": "MAP_GOLDENROD_CITY"
+      "direction": "down"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE36",
       "offset": 16,
-      "map": "MAP_ROUTE36"
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -33,28 +33,28 @@
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_NATIONAL_PARK_GATEHOUSE_SOUTH",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 7,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_NATIONAL_PARK_GATEHOUSE_SOUTH",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 12,
       "y": 35,
       "elevation": 0,
       "dest_map": "MAP_GOLDENROD_CITY_GATEHOUSE_NORTH",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 13,
       "y": 35,
       "elevation": 0,
       "dest_map": "MAP_GOLDENROD_CITY_GATEHOUSE_NORTH",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

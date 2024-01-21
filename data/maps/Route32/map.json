@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "up",
+      "map": "MAP_VIOLET_CITY",
       "offset": 2,
-      "map": "MAP_VIOLET_CITY"
+      "direction": "up"
     },
     {
-      "direction": "down",
+      "map": "MAP_ROUTE33",
       "offset": 2,
-      "map": "MAP_ROUTE33"
+      "direction": "down"
     }
   ],
   "object_events": [
@@ -33,21 +33,21 @@
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_ROUTE32_GATEHOUSE",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 17,
       "y": 99,
       "elevation": 0,
       "dest_map": "MAP_ROUTE32_POKEMON_CENTER_1F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 11,
       "y": 108,
       "elevation": 0,
       "dest_map": "MAP_UNION_CAVE_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

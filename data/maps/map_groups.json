@@ -1,5 +1,4 @@
 {
-  "layouts_table_label": "gMapLayouts",
   "group_order": [
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_IndoorLittleroot",
@@ -35,6 +34,7 @@
     "gMapGroup_IndoorRoute123",
     "gMapGroup_IndoorRoute119",
     "gMapGroup_IndoorRoute124",
+    "gMapGroup_KantoTownsAndRoutes",
     "gMapGroup_PalletTown",
     "gMapGroup_ViridianCity",
     "gMapGroup_PewterCity",
@@ -46,7 +46,21 @@
     "gMapGroup_CinnabarIsland",
     "gMapGroup_SaffronCity",
     "gMapGroup_IndigoPlateau",
-    "gMapGroup_KantoRoutes",
+    "gMapGroup_KantoDungeons",
+    "gMapGroup_IndoorRoute2",
+    "gMapGroup_IndoorRoute4",
+    "gMapGroup_IndoorRoute5",
+    "gMapGroup_IndoorRoute6",
+    "gMapGroup_IndoorRoute7",
+    "gMapGroup_IndoorRoute8",
+    "gMapGroup_IndoorRoute10",
+    "gMapGroup_IndoorRoute11",
+    "gMapGroup_IndoorRoute12",
+    "gMapGroup_IndoorRoute15",
+    "gMapGroup_IndoorRoute16",
+    "gMapGroup_IndoorRoute18",
+    "gMapGroup_IndoorRoute22",
+    "gMapGroup_IndoorRoute25",
     "gMapGroup_OneIsland",
     "gMapGroup_TwoIsland",
     "gMapGroup_ThreeIsland",
@@ -54,6 +68,7 @@
     "gMapGroup_FiveIsland",
     "gMapGroup_SixIsland",
     "gMapGroup_SevenIsland",
+    "gMapGroup_JohtoTownsAndRoutes",
     "gMapGroup_NewBarkTown",
     "gMapGroup_CherrygroveCity",
     "gMapGroup_VioletCity",
@@ -64,7 +79,6 @@
     "gMapGroup_CianwoodCity",
     "gMapGroup_MahoganyTown",
     "gMapGroup_BlackthornCity",
-    "gMapGroup_JohtoRoutes",
     "gMapGroup_JohtoDungeons",
     "gMapGroup_IndoorRoute26",
     "gMapGroup_IndoorRoute27",
@@ -80,7 +94,6 @@
     "gMapGroup_RuinsOfAlph",
     "gMapGroup_NationalPark",
     "gMapGroup_BattleTower",
-    "gMapGroup_WhirlIslands",
     "gMapGroup_LakeOfRage"
   ],
   "gMapGroup_TownsAndRoutes": [
@@ -669,15 +682,52 @@
   "gMapGroup_IndoorRoute124": [
     "Route124_DivingTreasureHuntersHouse"
   ],
-  "gMapGroup_PalletTown": [
+  "gMapGroup_KantoTownsAndRoutes": [
     "PalletTown",
+    "ViridianCity",
+    "PewterCity",
+    "CeruleanCity",
+    "LavenderTown",
+    "VermilionCity",
+    "CeladonCity",
+    "FuchsiaCity",
+    "CinnabarIsland",
+    "SaffronCity",
+    "IndigoPlateau_Exterior",
+    "Route1",
+    "Route2",
+    "Route3",
+    "Route4",
+    "Route5",
+    "Route6",
+    "Route7",
+    "Route8",
+    "Route9",
+    "Route10",
+    "Route11",
+    "Route12",
+    "Route13",
+    "Route14",
+    "Route15",
+    "Route16",
+    "Route17",
+    "Route18",
+    "Route19",
+    "Route20",
+    "Route21_North",
+    "Route21_South",
+    "Route22",
+    "Route23",
+    "Route24",
+    "Route25"
+  ],
+  "gMapGroup_PalletTown": [
     "PlayersHouse_1F",
     "PlayersHouse_2F",
     "GarysHouse",
     "ProfessorOaksLab"
   ],
   "gMapGroup_ViridianCity": [
-    "ViridianCity",
     "ViridianCity_House1",
     "ViridianCity_Gym",
     "ViridianCity_House2",
@@ -686,7 +736,6 @@
     "ViridianCity_PokemonCenter_2F"
   ],
   "gMapGroup_PewterCity": [
-    "PewterCity",
     "PewterCity_Museum_1F",
     "PewterCity_Museum_2F",
     "PewterCity_Gym",
@@ -697,7 +746,6 @@
     "PewterCity_House2"
   ],
   "gMapGroup_CeruleanCity": [
-    "CeruleanCity",
     "CeruleanCity_House1",
     "CeruleanCity_House2",
     "CeruleanCity_House3",
@@ -713,7 +761,6 @@
     "CeruleanCave_B1F"
   ],
   "gMapGroup_LavenderTown": [
-    "LavenderTown",
     "LavenderTown_PokemonCenter_1F",
     "LavenderTown_PokemonCenter_2F",
     "LavenderTown_VolunteerPokemonHouse",
@@ -729,7 +776,6 @@
     "PokemonTower_7F"
   ],
   "gMapGroup_VermilionCity": [
-    "VermilionCity",
     "VermilionCity_House1",
     "VermilionCity_PokemonCenter_1F",
     "VermilionCity_PokemonCenter_2F",
@@ -741,7 +787,6 @@
     "SSAnne_Exterior"
   ],
   "gMapGroup_CeladonCity": [
-    "CeladonCity",
     "CeladonCity_DepartmentStore_1F",
     "CeladonCity_DepartmentStore_2F",
     "CeladonCity_DepartmentStore_3F",
@@ -769,7 +814,6 @@
     "CeladonCity_Hotel"
   ],
   "gMapGroup_FuchsiaCity": [
-    "FuchsiaCity",
     "FuchsiaCity_SafariZone_Entrance",
     "KantoSafariZone_Center",
     "KantoSafariZone_East",
@@ -791,7 +835,6 @@
     "FuchsiaCity_House3"
   ],
   "gMapGroup_CinnabarIsland": [
-    "NewMap1",
     "CinnabarIsland_Gym",
     "PokemonLab_Entrance",
     "PokemonLab_Lounge",
@@ -806,7 +849,6 @@
     "PokemonMansion_B1F"
   ],
   "gMapGroup_SaffronCity": [
-    "SaffronCity",
     "SaffronCity_Classic",
     "SaffronCity_House1_1F",
     "SaffronCity_House1_2F",
@@ -832,7 +874,6 @@
     "SilphCo_Elevator"
   ],
   "gMapGroup_IndigoPlateau": [
-    "IndigoPlateau_Exterior",
     "IndigoPlateau_PokemonCenter_1F",
     "IndigoPlateau_PokemonCenter_2F",
     "KantoPokemonLeague_LoreleisRoom",
@@ -842,83 +883,85 @@
     "KantoPokemonLeague_ChampionsRoom",
     "KantoPokemonLeague_HallOfFame"
   ],
-  "gMapGroup_KantoRoutes": [
-    "Route1",
-    "Route2",
-    "Route3",
-    "Route4",
-    "Route5",
-    "Route6",
-    "Route7",
-    "Route8",
-    "Route9",
-    "Route10",
-    "Route11",
-    "Route12",
-    "Route13",
-    "Route14",
-    "Route15",
-    "Route16",
-    "Route17",
-    "Route18",
-    "Route19",
-    "Route20",
-    "Route21_North",
-    "Route21_South",
-    "Route22",
-    "Route23",
-    "Route24",
-    "Route25",
-    "Route2_ViridianForest_SouthEntrance",
-    "Route2_House",
-    "Route2_EastBuilding",
-    "Route2_ViridianForest_NorthEntrance",
+  "gMapGroup_KantoDungeons": [
     "ViridianForest",
     "DiglettsCave_NorthEntrance",
     "DiglettsCave",
     "DiglettsCave_SouthEntrance",
-    "Route4_PokemonCenter_1F",
-    "Route4_PokemonCenter_2F",
     "MtMoon_1F",
     "MtMoon_B1F",
     "MtMoon_B2F",
-    "Route5_PokemonDayCare",
-    "Route5_SouthEntrance",
     "UndergroundPath_NorthEntrance",
     "UndergroundPath_NorthSouthTunnel",
     "UndergroundPath_SouthEntrance",
-    "Route6_NorthEntrance",
-    "Route7_EastEntrance",
     "UndergroundPath_WestEntrance",
     "UndergroundPath_EastWestTunnel",
     "UndergroundPath_EastEntrance",
-    "Route8_WestEntrance",
-    "Route10_PokemonCenter_1F",
-    "Route10_PokemonCenter_2F",
     "RockTunnel_1F",
     "RockTunnel_B1F",
     "PowerPlant",
-    "Route11_EastEntrance_1F",
-    "Route11_EastEntrance_2F",
-    "Route12_NorthEntrance_1F",
-    "Route12_NorthEntrance_2F",
-    "Route12_FishingHouse",
-    "Route15_WestEntrance_1F",
-    "Route15_WestEntrance_2F",
-    "Route16_House",
-    "Route16_NorthEntrance_1F",
-    "Route16_NorthEntrance_2F",
-    "Route18_EastEntrance_1F",
-    "Route18_EastEntrance_2F",
     "SeafomIslands_1F",
     "SeafoamIslands_B1F",
     "SeafoamIslands_B2F",
     "SeafoamIslands_B3F",
     "SeafoamIslands_B4F",
-    "Route22_NorthEntrance",
     "KantoVictoryRoad_1F",
     "KantoVictoryRoad_2F",
-    "KantoVictoryRoad_3F",
+    "KantoVictoryRoad_3F"
+  ],
+  "gMapGroup_IndoorRoute2": [
+    "Route2_ViridianForest_SouthEntrance",
+    "Route2_House",
+    "Route2_EastBuilding",
+    "Route2_ViridianForest_NorthEntrance"
+  ],
+  "gMapGroup_IndoorRoute4": [
+    "Route4_PokemonCenter_1F",
+    "Route4_PokemonCenter_2F"
+  ],
+  "gMapGroup_IndoorRoute5": [
+    "Route5_PokemonDayCare",
+    "Route5_SouthEntrance"
+  ],
+  "gMapGroup_IndoorRoute6": [
+    "Route6_NorthEntrance"
+  ],
+  "gMapGroup_IndoorRoute7": [
+    "Route7_EastEntrance"
+  ],
+  "gMapGroup_IndoorRoute8": [
+    "Route8_WestEntrance"
+  ],
+  "gMapGroup_IndoorRoute10": [
+    "Route10_PokemonCenter_1F",
+    "Route10_PokemonCenter_2F"
+  ],
+  "gMapGroup_IndoorRoute11": [
+    "Route11_EastEntrance_1F",
+    "Route11_EastEntrance_2F"
+  ],
+  "gMapGroup_IndoorRoute12": [
+    "Route12_NorthEntrance_1F",
+    "Route12_NorthEntrance_2F",
+    "Route12_FishingHouse"
+  ],
+  "gMapGroup_IndoorRoute15": [
+    "Route15_WestEntrance_1F",
+    "Route15_WestEntrance_2F"
+  ],
+  "gMapGroup_IndoorRoute16": [
+    "Route16_House",
+    "Route16_NorthEntrance_1F",
+    "Route16_NorthEntrance_2F"
+  ],
+  "gMapGroup_IndoorRoute18": [
+    "Route18_EastEntrance_1F",
+    "Route18_EastEntrance_2F"
+  ],
+  "gMapGroup_IndoorRoute22": [
+    "Route22_NorthEntrance"
+  ],
+  "gMapGroup_IndoorRoute25": [
     "Route25_SeaCottage"
   ],
   "gMapGroup_OneIsland": [
@@ -1070,8 +1113,43 @@
     "SevenIsland_TrainerTower_Roof",
     "SevenIsland_TrainerTower_Elevator"
   ],
-  "gMapGroup_NewBarkTown": [
+  "gMapGroup_JohtoTownsAndRoutes": [
     "NewBarkTown",
+    "CherrygroveCity",
+    "VioletCity",
+    "AzaleaTown",
+    "GoldenrodCity",
+    "EcruteakCity",
+    "OlivineCity",
+    "CianwoodCity",
+    "MahoganyTown",
+    "BlackthornCity",
+    "Route26",
+    "Route27",
+    "Route28",
+    "Route29",
+    "Route30",
+    "Route31",
+    "Route32",
+    "Route33",
+    "Route34",
+    "Route35",
+    "Route36",
+    "Route37",
+    "Route38",
+    "Route39",
+    "Route40",
+    "Route41",
+    "Route42",
+    "Route43",
+    "Route44",
+    "Route45",
+    "Route46",
+    "RuinsOfAlph_Outside",
+    "NationalPark",
+    "LakeOfRage"
+  ],
+  "gMapGroup_NewBarkTown": [
     "NewBarkTown_PlayersHouse_1F",
     "NewBarkTown_PlayersHouse_2F",
     "NewBarkTown_House1",
@@ -1079,7 +1157,6 @@
     "NewBarkTown_ProfessorElmsLab"
   ],
   "gMapGroup_CherrygroveCity": [
-    "CherrygroveCity",
     "CherrygroveCity_Mart",
     "CherrygroveCity_PokemonCenter_1F",
     "CherrygroveCity_PokemonCenter_2F",
@@ -1088,7 +1165,6 @@
     "CherrygroveCity_House3"
   ],
   "gMapGroup_VioletCity": [
-    "VioletCity",
     "VioletCity_House1",
     "VioletCity_Mart",
     "VioletCity_Gym",
@@ -1101,7 +1177,6 @@
     "SproutTower_3F"
   ],
   "gMapGroup_AzaleaTown": [
-    "AzaleaTown",
     "AzaleaTown_Mart",
     "AzaleaTown_PokemonCenter_1F",
     "AzaleaTown_PokemonCenter_2F",
@@ -1113,7 +1188,6 @@
     "Azalea_Gatehouse"
   ],
   "gMapGroup_GoldenrodCity": [
-    "GoldenrodCity",
     "GoldenrodCity_Underground_NorthEntrance",
     "GoldenrodCity_Underground_SouthEntrance",
     "GoldenrodCity_Underground",
@@ -1147,7 +1221,6 @@
     "GoldenrodCity_RadioTower_5F"
   ],
   "gMapGroup_EcruteakCity": [
-    "EcruteakCity",
     "EcruteakCity_GatehouseWest",
     "EcruteakCity_GatehouseEast",
     "EcruteakCity_PokemonCenter_1F",
@@ -1178,7 +1251,6 @@
     "EcruteakCity_DanceTheater"
   ],
   "gMapGroup_OlivineCity": [
-    "OlivineCity",
     "OlivineCity_Harbor",
     "OlivineCity_PokemonCenter_1F",
     "OlivineCity_PokemonCenter_2F",
@@ -1196,7 +1268,6 @@
     "OlivineCity_Lighthouse_6F"
   ],
   "gMapGroup_CianwoodCity": [
-    "CianwoodCity",
     "CianwoodCity_PokemonCenter_1F",
     "CianwoodCity_PokemonCenter_2F",
     "CianwoodCity_Gym",
@@ -1206,7 +1277,6 @@
     "CianwoodCity_House2"
   ],
   "gMapGroup_MahoganyTown": [
-    "MahoganyTown",
     "MahoganyTown_Gatehouse",
     "MahoganyTown_RocketHideout_1F",
     "MahoganyTown_RocketHideout_B1F",
@@ -1218,7 +1288,6 @@
     "MahoganyTown_House"
   ],
   "gMapGroup_BlackthornCity": [
-    "BlackthornCity",
     "BlackthornCity_PokemonCenter_1F",
     "BlackthornCity_PokemonCenter_2F",
     "BlackthornCity_Mart",
@@ -1232,33 +1301,23 @@
     "DragonsDen_B2F",
     "DragonsDen_House"
   ],
-  "gMapGroup_JohtoRoutes": [
-    "Route26",
-    "Route27",
-    "Route28",
-    "Route29",
-    "Route30",
-    "Route31",
-    "Route32",
-    "Route33",
-    "Route34",
-    "Route35",
-    "Route36",
-    "Route37",
-    "Route38",
-    "Route39",
-    "Route40",
-    "Route41",
-    "Route42",
-    "Route43",
-    "Route44",
-    "Route45",
-    "Route46"
-  ],
   "gMapGroup_JohtoDungeons": [
     "UnionCave_1F",
     "UnionCave_B1F",
     "UnionCave_B2F",
+    "RuinsOfAlph_InnerChamber",
+    "RuinsOfAlph_KabutoChamber",
+    "RuinsOfAlph_KabutoItemRoom",
+    "RuinsOfAlph_KabutoWordRoom",
+    "RuinsOfAlph_HoOhChamber",
+    "RuinsOfAlph_HoOkItemRoom",
+    "RuinsOfAlph_HoOhWordRoom",
+    "RuinsOfAlph_OmanyteChamber",
+    "RuinsOfAlph_OmanyteItemRoom",
+    "RuinsOfAlph_OmanyteWordRoom",
+    "RuinsOfAlph_AerodactylChamber",
+    "RuinsOfAlph_AerodactylItemRoom",
+    "RuinsOfAlph_AerodactylWordRoom",
     "IlexForest",
     "DarkCave_Violet",
     "DarkCave_Blackthorn",
@@ -1273,6 +1332,16 @@
     "IcePath_B2F",
     "IcePath_B2f_2",
     "IcePath_B3F",
+    "WhirlIslands_NorthWestEntrance",
+    "WhirlIslands_NorthEastEntrance",
+    "WhirlIslands_SouthWestEntrance",
+    "WhirlIslands_SouthEastEntrance",
+    "WhirlIslands_B2F",
+    "WhirlIslands_B3F",
+    "WhirlIslands_B4F",
+    "WhirlIslands_B5F",
+    "WhirlIslands_B6F",
+    "WhirlIslands_B7F",
     "MtSilver_Entrance",
     "MtSilver_MainRoom",
     "MtSilver_SouthRoom",
@@ -1322,24 +1391,9 @@
     "Route43_Gatehouse"
   ],
   "gMapGroup_RuinsOfAlph": [
-    "RuinsOfAlph_Outside",
-    "RuinsOfAlph_ResearchCenter",
-    "RuinsOfAlph_InnerChamber",
-    "RuinsOfAlph_KabutoChamber",
-    "RuinsOfAlph_KabutoItemRoom",
-    "RuinsOfAlph_KabutoWordRoom",
-    "RuinsOfAlph_HoOhChamber",
-    "RuinsOfAlph_HoOkItemRoom",
-    "RuinsOfAlph_HoOhWordRoom",
-    "RuinsOfAlph_OmanyteChamber",
-    "RuinsOfAlph_OmanyteItemRoom",
-    "RuinsOfAlph_OmanyteWordRoom",
-    "RuinsOfAlph_AerodactylChamber",
-    "RuinsOfAlph_AerodactylItemRoom",
-    "RuinsOfAlph_AerodactylWordRoom"
+    "RuinsOfAlph_ResearchCenter"
   ],
   "gMapGroup_NationalPark": [
-    "NationalPark",
     "NationalPark_GatehouseSouth",
     "NationalPark_GatehouseEast"
   ],
@@ -1351,20 +1405,7 @@
     "BattleTower_Corridor",
     "BattleTower_BattleRoom"
   ],
-  "gMapGroup_WhirlIslands": [
-    "WhirlIslands_NorthWestEntrance",
-    "WhirlIslands_NorthEastEntrance",
-    "WhirlIslands_SouthWestEntrance",
-    "WhirlIslands_SouthEastEntrance",
-    "WhirlIslands_B2F",
-    "WhirlIslands_B3F",
-    "WhirlIslands_B4F",
-    "WhirlIslands_B5F",
-    "WhirlIslands_B6F",
-    "WhirlIslands_B7F"
-  ],
   "gMapGroup_LakeOfRage": [
-    "LakeOfRage",
     "LakeOfRage_House1",
     "LakeOfRage_House2"
   ]

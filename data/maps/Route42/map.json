@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "left",
+      "map": "MAP_ECRUTEAK_CITY",
       "offset": -20,
-      "map": "MAP_ECRUTEAK_CITY"
+      "direction": "left"
     },
     {
-      "direction": "right",
+      "map": "MAP_MAHOGANY_TOWN",
       "offset": -2,
-      "map": "MAP_MAHOGANY_TOWN"
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -33,28 +33,28 @@
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_MT_MORTAR_ENTRANCE",
-      "dest_warp_id": 6
+      "dest_warp_id": "6"
     },
     {
       "x": 59,
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_MT_MORTAR_ENTRANCE",
-      "dest_warp_id": 8
+      "dest_warp_id": "8"
     },
     {
       "x": 0,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_ECRUTEAK_CITY_GATEHOUSE_EAST",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 36,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_MT_MORTAR_ENTRANCE",
-      "dest_warp_id": 7
+      "dest_warp_id": "7"
     }
   ],
   "coord_events": [

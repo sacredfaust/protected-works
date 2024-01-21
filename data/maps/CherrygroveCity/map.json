@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "right",
+      "map": "MAP_ROUTE29",
       "offset": 2,
-      "map": "MAP_ROUTE29"
+      "direction": "right"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE30",
       "offset": 18,
-      "map": "MAP_ROUTE30"
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -33,35 +33,35 @@
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_CHERRYGROVE_CITY_MART",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 42,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_CHERRYGROVE_CITY_POKEMON_CENTER_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 26,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_CHERRYGROVE_CITY_HOUSE1",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 36,
       "y": 12,
       "elevation": 0,
       "dest_map": "MAP_CHERRYGROVE_CITY_HOUSE2",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 44,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_CHERRYGROVE_CITY_HOUSE3",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

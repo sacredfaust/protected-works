@@ -5432,14 +5432,14 @@
       "blockdata_filepath": "data/layouts/FuchsiaCity_House3/map.bin"
     },
     {
-      "id": "LAYOUT_NEW_MAP1",
-      "name": "NewMap1_Layout",
+      "id": "LAYOUT_CINNABAR_ISLAND",
+      "name": "CiannbarIsland_Layout",
       "width": 24,
       "height": 20,
       "primary_tileset": "gTileset_KantoGeneral",
       "secondary_tileset": "gTileset_CinnabarIsland",
-      "border_filepath": "data/layouts/NewMap1/border.bin",
-      "blockdata_filepath": "data/layouts/NewMap1/map.bin"
+      "border_filepath": "data/layouts/CinnabarIsland/border.bin",
+      "blockdata_filepath": "data/layouts/CinnabarIsland/map.bin"
     },
     {
       "id": "LAYOUT_CINNABAR_ISLAND_GYM",

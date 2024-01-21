@@ -14,9 +14,9 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "right",
+      "map": "MAP_ROUTE41",
       "offset": 0,
-      "map": "MAP_ROUTE41"
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -28,42 +28,42 @@
       "y": 39,
       "elevation": 0,
       "dest_map": "MAP_CIANWOOD_CITY_PHOTO_STUDIO",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 18,
       "y": 46,
       "elevation": 0,
       "dest_map": "MAP_CIANWOOD_CITY_HOUSE1",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 23,
       "y": 52,
       "elevation": 0,
       "dest_map": "MAP_CIANWOOD_CITY_HOUSE2",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 34,
       "y": 53,
       "elevation": 0,
       "dest_map": "MAP_CIANWOOD_CITY_POKEMON_CENTER_1F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 9,
       "y": 56,
       "elevation": 0,
       "dest_map": "MAP_CIANWOOD_CITY_GYM",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 21,
       "y": 60,
       "elevation": 0,
       "dest_map": "MAP_CIANWOOD_CITY_KIRKS_HOUSE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "left",
+      "map": "MAP_NEW_BARK_TOWN",
       "offset": 2,
-      "map": "MAP_NEW_BARK_TOWN"
+      "direction": "left"
     },
     {
-      "direction": "right",
+      "map": "MAP_ROUTE26",
       "offset": -122,
-      "map": "MAP_ROUTE26"
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -33,21 +33,21 @@
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_TOHJO_FALLS",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 44,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_TOHJO_FALLS",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 40,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_ROUTE27_HOUSE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
