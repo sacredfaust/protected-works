@@ -360,13 +360,14 @@ static u32 LoopedTask_OpenRegionMap(s32 taskState)
         SetVBlankCallback_(VBlankCB_RegionMap);
         return LT_INC_AND_PAUSE;
     case 6:
-        if (!ShouldOpenRegionMapZoomed())
-            menuGfxId = POKENAV_GFX_MAP_MENU_ZOOMED_OUT;
-        else
-            menuGfxId = POKENAV_GFX_MAP_MENU_ZOOMED_IN;
+        //Hide this header as it covers parts of the Johto and Kanto maps
+        // if (!ShouldOpenRegionMapZoomed())
+            // menuGfxId = POKENAV_GFX_MAP_MENU_ZOOMED_OUT;
+        // else
+            // menuGfxId = POKENAV_GFX_MAP_MENU_ZOOMED_IN;
 
-        LoadLeftHeaderGfxForIndex(menuGfxId);
-        ShowLeftHeaderGfx(menuGfxId, TRUE, TRUE);
+        // LoadLeftHeaderGfxForIndex(menuGfxId);
+        // ShowLeftHeaderGfx(menuGfxId, TRUE, TRUE);
         PokenavFadeScreen(POKENAV_FADE_FROM_BLACK);
         return LT_INC_AND_PAUSE;
     case 7:
