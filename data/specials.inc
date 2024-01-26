@@ -263,6 +263,8 @@ gSpecials::
 	def_special BedroomPC
 	def_special PlayerPC
 	def_special FieldShowRegionMap
+	def_special FieldShowRegionMapKanto
+	def_special FieldShowRegionMapJohto
 	def_special GetInGameTradeSpeciesInfo
 	def_special CreateInGameTradePokemon
 	def_special DoInGameTradeScene

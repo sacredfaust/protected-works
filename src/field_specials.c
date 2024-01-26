@@ -972,6 +972,22 @@ static void CB2_FieldShowRegionMap(void)
 
 void FieldShowRegionMap(void)
 {
+    SetMapGraphics(2);
+    SetFieldMapNumber(2);
+    SetMainCallback2(CB2_FieldShowRegionMap);
+}
+
+void FieldShowRegionMapKanto(void)
+{
+    SetMapGraphics(0);
+    SetFieldMapNumber(0);
+    SetMainCallback2(CB2_FieldShowRegionMap);
+}
+
+void FieldShowRegionMapJohto(void)
+{
+    SetMapGraphics(1);
+    SetFieldMapNumber(1);
     SetMainCallback2(CB2_FieldShowRegionMap);
 }
 

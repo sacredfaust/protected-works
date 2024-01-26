@@ -162,8 +162,8 @@
 #define MB_FALL_WARP 0x9E
 #define MB_UNUSED_9F 0x9F
 #define MB_BERRY_TREE_SOIL 0xA0
-#define MB_UNUSED_A1 0xA1
-#define MB_UNUSED_A2 0xA2
+#define MB_REGION_MAP_KANTO 0xA1
+#define MB_REGION_MAP_JOHTO 0xA2
 #define MB_UNUSED_A3 0xA3
 #define MB_UNUSED_A4 0xA4
 #define MB_UNUSED_A5 0xA5
