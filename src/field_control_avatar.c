@@ -34,6 +34,7 @@
 #include "constants/map_types.h"
 #include "constants/songs.h"
 #include "constants/trainer_hill.h"
+#include "constants/metatile_behaviors.h"
 
 static EWRAM_DATA u8 sWildEncounterImmunitySteps = 0;
 static EWRAM_DATA u16 sPrevMetatileBehavior = 0;
@@ -761,6 +762,12 @@ static bool8 TryStartWarpEventScript(struct MapPosition *position, u16 metatileB
             DoMossdeepGymWarp();
             return TRUE;
         }
+        if (MetatileBehavior_IsFallWarp(metatileBehavior) == TRUE)
+        {
+            ResetInitialPlayerAvatarState();
+            ScriptContext_SetupScript(EventScript_FallDownHoleMtPyre);
+            return TRUE;
+        }
         DoWarp();
         return TRUE;
     }
@@ -778,7 +785,8 @@ static bool8 IsWarpMetatileBehavior(u16 metatileBehavior)
      && MetatileBehavior_IsAquaHideoutWarp(metatileBehavior) != TRUE
      && MetatileBehavior_IsMtPyreHole(metatileBehavior) != TRUE
      && MetatileBehavior_IsMossdeepGymWarp(metatileBehavior) != TRUE
-     && MetatileBehavior_IsUnionRoomWarp(metatileBehavior) != TRUE)
+     && MetatileBehavior_IsUnionRoomWarp(metatileBehavior) != TRUE
+     && MetatileBehavior_IsFallWarp(metatileBehavior) != TRUE)
         return FALSE;
     return TRUE;
 }
@@ -932,6 +940,16 @@ static const u8 *GetCoordEventScriptAtPosition(struct MapHeader *mapHeader, u16 
         }
     }
     return NULL;
+}
+
+void HandleBoulderFallThroughHole(struct ObjectEvent * object)
+{
+    if (MapGridGetMetatileBehaviorAt(object->currentCoords.x, object->currentCoords.y) == MB_FALL_WARP)
+    {
+        PlaySE(SE_FALL);
+        RemoveObjectEventByLocalIdAndMap(object->localId, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup);
+        FlagClear(GetBoulderRevealFlagByLocalIdAndMap(object->localId, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup));
+    }
 }
 
 const u8 *GetCoordEventScriptAtMapPosition(struct MapPosition *position)

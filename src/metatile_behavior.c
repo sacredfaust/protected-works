@@ -1440,3 +1440,11 @@ bool8 MetatileBehavior_IsHeadbuttTree(u8 metatileBehavior)
     else
         return FALSE;
 }
+
+bool8 MetatileBehavior_IsFallWarp(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_FALL_WARP)
+        return TRUE;
+    else
+        return FALSE;
+}
