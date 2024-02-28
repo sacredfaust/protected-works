@@ -1224,6 +1224,16 @@ const u8 gText_BattleFactory[] = _("BATTLE FACTORY");
 const u8 gText_BattleArena[] = _("BATTLE ARENA");
 const u8 gText_BattlePike[] = _("BATTLE PIKE");
 const u8 gText_BattlePyramid[] = _("BATTLE PYRAMID");
+const u8 gText_VermilionCity[] = _("VERMILION CITY");
+const u8 gText_Sevii[] = _("SEVII ISLES");
+const u8 gText_Sevii1[] = _("ONE ISLAND");
+const u8 gText_Sevii2[] = _("TWO ISLAND");
+const u8 gText_Sevii3[] = _("THREE ISLAND");
+const u8 gText_Sevii4[] = _("FOUR ISLAND");
+const u8 gText_Sevii5[] = _("FIVE ISLAND");
+const u8 gText_Sevii6[] = _("SIX ISLAND");
+const u8 gText_Sevii7[] = _("SEVEN ISLAND");
+const u8 gText_OlivineCity[] = _("OLIVINE CITY");
 
 ALIGNED(4) const u8 gText_FacilitySingle[] = _("{STR_VAR_1} SINGLE");
 ALIGNED(4) const u8 gText_FacilityDouble[] = _("{STR_VAR_1} DOUBLE");

@@ -8958,3 +8958,10 @@ u8 MovementAction_Fly_Finish(struct ObjectEvent *objectEvent, struct Sprite *spr
 {
     return TRUE;
 }
+
+u16 GetBoulderRevealFlagByLocalIdAndMap(u8 localId, u8 mapNum, u8 mapGroup)
+{
+    // Pushable boulder object events store the flag to reveal the boulder
+    // on the floor below in their trainer type field.
+    return GetObjectEventTemplateByLocalIdAndMap(localId, mapNum, mapGroup)->trainerType;
+}

@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
+      "script": "SixIsland_Harbor_EventScript_FerryAttendant",
       "flag": "0"
     },
     {
@@ -47,7 +47,7 @@
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_SIX_ISLAND",
-      "dest_warp_id": 3
+      "dest_warp_id": "3"
     }
   ],
   "coord_events": [

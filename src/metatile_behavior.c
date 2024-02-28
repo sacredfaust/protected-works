@@ -1060,6 +1060,22 @@ bool8 MetatileBehavior_IsRegionMap(u8 metatileBehavior)
         return FALSE;
 }
 
+bool8 MetatileBehavior_IsRegionMapKanto(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_REGION_MAP_KANTO)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsRegionMapJohto(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_REGION_MAP_JOHTO)
+        return TRUE;
+    else
+        return FALSE;
+}
+
 bool8 MetatileBehavior_IsClosedSootopolisDoor(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_CLOSED_SOOTOPOLIS_DOOR)
@@ -1436,6 +1452,14 @@ bool8 MetatileBehavior_IsDirectionalStairWarp(u8 metatileBehavior)
 bool8 MetatileBehavior_IsHeadbuttTree(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_HEADBUTT)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsFallWarp(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_FALL_WARP)
         return TRUE;
     else
         return FALSE;

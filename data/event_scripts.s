@@ -1346,6 +1346,24 @@ EventScript_RegionMap::
 	releaseall
 	end
 
+EventScript_RegionMapKanto::
+	lockall
+	msgbox Common_Text_LookCloserAtMapKanto, MSGBOX_DEFAULT
+	fadescreen FADE_TO_BLACK
+	special FieldShowRegionMapKanto
+	waitstate
+	releaseall
+	end
+
+EventScript_RegionMapJohto::
+	lockall
+	msgbox Common_Text_LookCloserAtMapJohto, MSGBOX_DEFAULT
+	fadescreen FADE_TO_BLACK
+	special FieldShowRegionMapJohto
+	waitstate
+	releaseall
+	end
+
 Common_EventScript_PlayBrineysBoatMusic::
 	setflag FLAG_DONT_TRANSITION_MUSIC
 	playbgm MUS_SAILING, FALSE

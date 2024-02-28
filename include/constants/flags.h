@@ -652,31 +652,32 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
-#define FLAG_UNUSED_0x264  0x264 // Unused Flag
-#define FLAG_UNUSED_0x265  0x265 // Unused Flag
-#define FLAG_UNUSED_0x266  0x266 // Unused Flag
-#define FLAG_UNUSED_0x267  0x267 // Unused Flag
-#define FLAG_UNUSED_0x268  0x268 // Unused Flag
-#define FLAG_UNUSED_0x269  0x269 // Unused Flag
-#define FLAG_UNUSED_0x26A  0x26A // Unused Flag
-#define FLAG_UNUSED_0x26B  0x26B // Unused Flag
-#define FLAG_UNUSED_0x26C  0x26C // Unused Flag
-#define FLAG_UNUSED_0x26D  0x26D // Unused Flag
-#define FLAG_UNUSED_0x26E  0x26E // Unused Flag
-#define FLAG_UNUSED_0x26F  0x26F // Unused Flag
-#define FLAG_UNUSED_0x270  0x270 // Unused Flag
-#define FLAG_UNUSED_0x271  0x271 // Unused Flag
-#define FLAG_UNUSED_0x272  0x272 // Unused Flag
-#define FLAG_UNUSED_0x273  0x273 // Unused Flag
-#define FLAG_UNUSED_0x274  0x274 // Unused Flag
-#define FLAG_UNUSED_0x275  0x275 // Unused Flag
-#define FLAG_UNUSED_0x276  0x276 // Unused Flag
-#define FLAG_UNUSED_0x277  0x277 // Unused Flag
-#define FLAG_UNUSED_0x278  0x278 // Unused Flag
-#define FLAG_UNUSED_0x279  0x279 // Unused Flag
-#define FLAG_UNUSED_0x27A  0x27A // Unused Flag
-#define FLAG_UNUSED_0x27B  0x27B // Unused Flag
-#define FLAG_UNUSED_0x27C  0x27C // Unused Flag
+//Falling boulders
+#define FLAG_STOPPED_SEAFOAM_B3F_CURRENT  0x264 // Unused Flag
+#define FLAG_STOPPED_SEAFOAM_B4F_CURRENT  0x265 // Unused Flag
+#define FLAG_HIDE_SEAFOAM_1F_BOULDER_1  0x266 // Unused Flag
+#define FLAG_HIDE_SEAFOAM_1F_BOULDER_2  0x267 // Unused Flag
+#define FLAG_HIDE_SEAFOAM_B1F_BOULDER_1  0x268 // Unused Flag
+#define FLAG_HIDE_SEAFOAM_B1F_BOULDER_2  0x269 // Unused Flag
+#define FLAG_HIDE_SEAFOAM_B2F_BOULDER_1  0x26A // Unused Flag
+#define FLAG_HIDE_SEAFOAM_B2F_BOULDER_2  0x26B // Unused Flag
+#define FLAG_HIDE_SEAFOAM_B3F_BOULDER_1  0x26C // Unused Flag
+#define FLAG_HIDE_SEAFOAM_B3F_BOULDER_2  0x26D // Unused Flag
+#define FLAG_HIDE_SEAFOAM_B3F_BOULDER_3  0x26E // Unused Flag
+#define FLAG_HIDE_SEAFOAM_B3F_BOULDER_4  0x26F // Unused Flag
+#define FLAG_HIDE_SEAFOAM_B3F_BOULDER_5  0x270 // Unused Flag
+#define FLAG_HIDE_SEAFOAM_B3F_BOULDER_6  0x271 // Unused Flag
+#define FLAG_HIDE_SEAFOAM_B4F_BOULDER_1  0x272 // Unused Flag
+#define FLAG_HIDE_SEAFOAM_B4F_BOULDER_2  0x273 // Unused Flag
+#define FLAG_HIDE_ICEPATH_B1F_BOULDER_1  0x274 // Unused Flag
+#define FLAG_HIDE_ICEPATH_B1F_BOULDER_2  0x275 // Unused Flag
+#define FLAG_HIDE_ICEPATH_B1F_BOULDER_3  0x276 // Unused Flag
+#define FLAG_HIDE_ICEPATH_B1F_BOULDER_4  0x277 // Unused Flag
+#define FLAG_HIDE_ICEPATH_B2F_BOULDER_1  0x278 // Unused Flag
+#define FLAG_HIDE_ICEPATH_B2F_BOULDER_2  0x279 // Unused Flag
+#define FLAG_HIDE_ICEPATH_B2F_BOULDER_3  0x27A // Unused Flag
+#define FLAG_HIDE_ICEPATH_B2F_BOULDER_4  0x27B // Unused Flag
+#define FLAG_ICEPATH_BOULDERS_INITIALIZED  0x27C // Unused Flag
 #define FLAG_UNUSED_0x27D  0x27D // Unused Flag
 #define FLAG_UNUSED_0x27E  0x27E // Unused Flag
 #define FLAG_UNUSED_0x27F  0x27F // Unused Flag

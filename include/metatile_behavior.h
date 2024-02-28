@@ -109,6 +109,8 @@ bool8 MetatileBehavior_IsPacifidlogHorizontalLogRight(u8);
 bool8 MetatileBehavior_IsPacifidlogLog(u8);
 bool8 MetatileBehavior_IsTrickHousePuzzleDoor(u8);
 bool8 MetatileBehavior_IsRegionMap(u8);
+bool8 MetatileBehavior_IsRegionMapKanto(u8);
+bool8 MetatileBehavior_IsRegionMapJohto(u8);
 bool8 MetatileBehavior_IsClosedSootopolisDoor(u8);
 bool8 MetatileBehavior_IsSkyPillarClosedDoor(u8);
 bool8 MetatileBehavior_IsRoulette(u8);
@@ -154,5 +156,6 @@ bool8 MetatileBehavior_IsDirectionalUpLeftStairWarp(u8 metatileBehavior);
 bool8 MetatileBehavior_IsDirectionalDownRightStairWarp(u8 metatileBehavior);
 bool8 MetatileBehavior_IsDirectionalDownLeftStairWarp(u8 metatileBehavior);
 bool8 MetatileBehavior_IsDirectionalStairWarp(u8 metatileBehavior);
+bool8 MetatileBehavior_IsFallWarp(u8 metatileBehavior);
 
 #endif // GUARD_METATILE_BEHAVIOR_H
