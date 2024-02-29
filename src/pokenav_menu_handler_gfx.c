@@ -155,7 +155,7 @@ static const struct CompressedSpriteSheet sPokenavOptionsSpriteSheets[] =
 {
     {
         .data = gPokenavOptions_Gfx,
-        .size = 0x4000,
+        .size = 0x4400,
         .tag = GFXTAG_OPTIONS
     },
     {
@@ -192,7 +192,8 @@ static const u16 sOptionsLabelGfx_Tough[]     = {0x160, PALTAG_OPTIONS_DEFAULT -
 static const u16 sOptionsLabelGfx_KantoMap[]  = {0x180, PALTAG_OPTIONS_RED - PALTAG_OPTIONS_START};
 static const u16 sOptionsLabelGfx_JohtoMap[]  = {0x1A0, PALTAG_OPTIONS_DEFAULT - PALTAG_OPTIONS_START};
 static const u16 sOptionsLabelGfx_HoennMap[]  = {0x1C0, PALTAG_OPTIONS_BLUE - PALTAG_OPTIONS_START};
-static const u16 sOptionsLabelGfx_Cancel[]    = {0x1E0, PALTAG_OPTIONS_BEIGE - PALTAG_OPTIONS_START};
+static const u16 sOptionsLabelGfx_SeviiMap[]  = {0x1E0, PALTAG_OPTIONS_PINK - PALTAG_OPTIONS_START};
+static const u16 sOptionsLabelGfx_Cancel[]    = {0x200, PALTAG_OPTIONS_BEIGE - PALTAG_OPTIONS_START};
 
 struct
 {
@@ -259,12 +260,13 @@ struct
     },
     [POKENAV_MENU_TYPE_REGION_MAPS] =
     {
-        .yStart = 56,
+        .yStart = 42,
         .deltaY = 20,
         .gfx = {
             sOptionsLabelGfx_KantoMap,
             sOptionsLabelGfx_JohtoMap,
             sOptionsLabelGfx_HoennMap,
+            sOptionsLabelGfx_SeviiMap,
             sOptionsLabelGfx_Cancel
         }
     },
@@ -299,7 +301,8 @@ static const u8 *const sPageDescriptions[] =
     [POKENAV_MENUITEM_CONDITION_SEARCH_CANCEL] = gText_ReturnToConditionMenu,
     [POKENAV_MENUITEM_KANTO]                   = gText_CheckMapOfKanto,
     [POKENAV_MENUITEM_JOHTO]                   = gText_CheckMapOfJohto,
-    [POKENAV_MENUITEM_HOENN]                   = gText_CheckMapOfHoenn
+    [POKENAV_MENUITEM_HOENN]                   = gText_CheckMapOfHoenn,
+    [POKENAV_MENUITEM_SEVII]                   = gText_CheckMapOfSevii
 };
 
 static const u8 sOptionDescTextColors[]  = {TEXT_COLOR_GREEN, TEXT_COLOR_BLUE, TEXT_COLOR_LIGHT_GREEN};

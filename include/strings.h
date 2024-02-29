@@ -2975,6 +2975,7 @@ extern const u8 gText_CheckRegionMaps[];
 extern const u8 gText_CheckMapOfKanto[];
 extern const u8 gText_CheckMapOfJohto[];
 extern const u8 gText_CheckMapOfHoenn[];
+extern const u8 gText_CheckMapOfSevii[];
 extern const u8 gText_CheckPokemonInDetail[];
 extern const u8 gText_CallRegisteredTrainer[];
 extern const u8 gText_CheckObtainedRibbons[];
@@ -3043,5 +3044,6 @@ extern const u8 gText_TellHimTheWords[];
 //Custom
 extern const u8 gText_Kanto[];
 extern const u8 gText_Johto[];
+extern const u8 gText_Sevii_Menu[];
 
 #endif // GUARD_STRINGS_H

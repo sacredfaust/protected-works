@@ -42,7 +42,7 @@ static const u8 sLastCursorPositions[] =
     [POKENAV_MENU_TYPE_UNLOCK_MC_RIBBONS] = 4,
     [POKENAV_MENU_TYPE_CONDITION]         = 2,
     [POKENAV_MENU_TYPE_CONDITION_SEARCH]  = 5,
-    [POKENAV_MENU_TYPE_REGION_MAPS]       = 3
+    [POKENAV_MENU_TYPE_REGION_MAPS]       = 4
 };
 
 static const u8 sMenuItems[][MAX_POKENAV_MENUITEMS] =
@@ -89,6 +89,7 @@ static const u8 sMenuItems[][MAX_POKENAV_MENUITEMS] =
         POKENAV_MENUITEM_KANTO,
         POKENAV_MENUITEM_JOHTO,
         POKENAV_MENUITEM_HOENN,
+        POKENAV_MENUITEM_SEVII,
         POKENAV_MENUITEM_CONDITION_CANCEL
     }
 };
@@ -438,6 +439,11 @@ static u32 HandleRegionMapsMenuInput(struct Pokenav_Menu *menu)
             return POKENAV_MENU_FUNC_OPEN_FEATURE;
         case POKENAV_MENUITEM_HOENN:
             SetMapGraphics(2);
+            menu->helpBarIndex = gSaveBlock2Ptr->regionMapZoom ? HELPBAR_MAP_ZOOMED_IN : HELPBAR_MAP_ZOOMED_OUT;
+            SetMenuIdAndCB(menu, POKENAV_REGION_MAP);
+            return POKENAV_MENU_FUNC_OPEN_FEATURE;
+        case POKENAV_MENUITEM_SEVII:
+            SetMapGraphics(3);
             menu->helpBarIndex = gSaveBlock2Ptr->regionMapZoom ? HELPBAR_MAP_ZOOMED_IN : HELPBAR_MAP_ZOOMED_OUT;
             SetMenuIdAndCB(menu, POKENAV_REGION_MAP);
             return POKENAV_MENU_FUNC_OPEN_FEATURE;

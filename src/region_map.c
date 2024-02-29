@@ -130,6 +130,9 @@ static const u32 sRegionMapBg_TilemapLZ_Johto[] = INCBIN_U32("graphics/pokenav/r
 static const u16 sRegionMapBg_Pal_Kanto[] = INCBIN_U16("graphics/pokenav/region_map/kanto_map.gbapal");
 static const u32 sRegionMapBg_GfxLZ_Kanto[] = INCBIN_U32("graphics/pokenav/region_map/kanto_map.8bpp.lz");
 static const u32 sRegionMapBg_TilemapLZ_Kanto[] = INCBIN_U32("graphics/pokenav/region_map/kanto_map.bin.lz");
+static const u16 sRegionMapBg_Pal_Sevii[] = INCBIN_U16("graphics/pokenav/region_map/sevii_map.gbapal");
+static const u32 sRegionMapBg_GfxLZ_Sevii[] = INCBIN_U32("graphics/pokenav/region_map/sevii_map.8bpp.lz");
+static const u32 sRegionMapBg_TilemapLZ_Sevii[] = INCBIN_U32("graphics/pokenav/region_map/sevii_map.bin.lz");
 static const u16 sRegionMapPlayerIcon_BrendanPal[] = INCBIN_U16("graphics/pokenav/region_map/brendan_icon.gbapal");
 static const u8 sRegionMapPlayerIcon_BrendanGfx[] = INCBIN_U8("graphics/pokenav/region_map/brendan_icon.4bpp");
 static const u16 sRegionMapPlayerIcon_MayPal[] = INCBIN_U16("graphics/pokenav/region_map/may_icon.gbapal");
@@ -138,6 +141,7 @@ static const u8 sRegionMapPlayerIcon_MayGfx[] = INCBIN_U8("graphics/pokenav/regi
 #include "data/region_map/region_map_layout.h"
 #include "data/region_map/region_map_layout_johto.h"
 #include "data/region_map/region_map_layout_kanto.h"
+#include "data/region_map/region_map_layout_sevii.h"
 #include "data/region_map/region_map_entries.h"
 
 static const u16 sRegionMap_SpecialPlaceLocations[][2] =
@@ -391,6 +395,24 @@ static const u8 sMapHealLocations[][3] =
     [MAPSEC_FIVE_ISLAND] = {MAP_GROUP(FIVE_ISLAND), MAP_NUM(FIVE_ISLAND), HEAL_LOCATION_FIVE_ISLAND},
     [MAPSEC_SIX_ISLAND] = {MAP_GROUP(SIX_ISLAND), MAP_NUM(SIX_ISLAND), HEAL_LOCATION_SIX_ISLAND},
     [MAPSEC_SEVEN_ISLAND] = {MAP_GROUP(SEVEN_ISLAND), MAP_NUM(SEVEN_ISLAND), HEAL_LOCATION_SEVEN_ISLAND},
+    [MAPSEC_TREASURE_BEACH] = {MAP_GROUP(ONE_ISLAND_TREASURE_BEACH), MAP_NUM(ONE_ISLAND_TREASURE_BEACH), HEAL_LOCATION_NONE},
+    [MAPSEC_KINDLE_ROAD] = {MAP_GROUP(ONE_ISLAND_KINDLE_ROAD), MAP_NUM(ONE_ISLAND_KINDLE_ROAD), HEAL_LOCATION_NONE},
+    [MAPSEC_MT_EMBER] = {MAP_GROUP(MT_EMBER_EXTERIOR), MAP_NUM(MT_EMBER_EXTERIOR), HEAL_LOCATION_NONE},
+    [MAPSEC_CAPE_BRINK] = {MAP_GROUP(TWO_ISLAND_CAPE_BRINK), MAP_NUM(TWO_ISLAND_CAPE_BRINK), HEAL_LOCATION_NONE},
+    [MAPSEC_THREE_ISLE_PORT] = {MAP_GROUP(THREE_ISLAND_PORT), MAP_NUM(THREE_ISLAND_PORT), HEAL_LOCATION_NONE},
+    [MAPSEC_BOND_BRIDGE] = {MAP_GROUP(THREE_ISLAND_BOND_BRIDGE), MAP_NUM(THREE_ISLAND_BOND_BRIDGE), HEAL_LOCATION_NONE},
+    [MAPSEC_WATER_LABYRINTH] = {MAP_GROUP(FIVE_ISLAND_WATER_LABYRINTH), MAP_NUM(FIVE_ISLAND_WATER_LABYRINTH), HEAL_LOCATION_NONE},
+    [MAPSEC_RESORT_GORGEOUS] = {MAP_GROUP(FIVE_ISLAND_RESORT_GORGEOUS), MAP_NUM(FIVE_ISLAND_RESORT_GORGEOUS), HEAL_LOCATION_NONE},
+    [MAPSEC_FIVE_ISLE_MEADOW] = {MAP_GROUP(FIVE_ISLAND_MEADOW), MAP_NUM(FIVE_ISLAND_MEADOW), HEAL_LOCATION_NONE},
+    [MAPSEC_MEMORIAL_PILLAR] = {MAP_GROUP(FIVE_ISLAND_MEMORIAL_PILLAR), MAP_NUM(FIVE_ISLAND_MEMORIAL_PILLAR), HEAL_LOCATION_NONE},
+    [MAPSEC_WATER_PATH] = {MAP_GROUP(SIX_ISLAND_WATER_PATH), MAP_NUM(SIX_ISLAND_WATER_PATH), HEAL_LOCATION_NONE},
+    [MAPSEC_GREEN_PATH] = {MAP_GROUP(SIX_ISLAND_GREEN_PATH), MAP_NUM(SIX_ISLAND_GREEN_PATH), HEAL_LOCATION_NONE},
+    [MAPSEC_OUTCAST_ISLAND] = {MAP_GROUP(SIX_ISLAND_OUTCAST_ISLAND), MAP_NUM(SIX_ISLAND_OUTCAST_ISLAND), HEAL_LOCATION_NONE},
+    [MAPSEC_RUIN_VALLEY] = {MAP_GROUP(SIX_ISLAND_RUIN_VALLEY), MAP_NUM(SIX_ISLAND_RUIN_VALLEY), HEAL_LOCATION_NONE},
+    [MAPSEC_TRAINER_TOWER] = {MAP_GROUP(SEVEN_ISLAND_TRAINER_TOWER), MAP_NUM(SEVEN_ISLAND_TRAINER_TOWER), HEAL_LOCATION_NONE},
+    [MAPSEC_CANYON_ENTRANCE] = {MAP_GROUP(SEVEN_ISLAND_SEVAULT_CANYON_ENTRANCE), MAP_NUM(SEVEN_ISLAND_SEVAULT_CANYON_ENTRANCE), HEAL_LOCATION_NONE},
+    [MAPSEC_SEVAULT_CANYON] = {MAP_GROUP(SEVEN_ISLAND_SEVAULT_CANYON), MAP_NUM(SEVEN_ISLAND_SEVAULT_CANYON), HEAL_LOCATION_NONE},
+    [MAPSEC_TANOBY_RUINS] = {MAP_GROUP(SEVEN_ISLAND_TANOBY_RUINS), MAP_NUM(SEVEN_ISLAND_TANOBY_RUINS), HEAL_LOCATION_NONE},
     [MAPSEC_NEW_BARK_TOWN] = {MAP_GROUP(NEW_BARK_TOWN), MAP_NUM(NEW_BARK_TOWN), HEAL_LOCATION_NEW_BARK_TOWN},
     [MAPSEC_CHERRYGROVE_CITY] = {MAP_GROUP(CHERRYGROVE_CITY), MAP_NUM(CHERRYGROVE_CITY), HEAL_LOCATION_CHERRYGROVE_CITY},
     [MAPSEC_VIOLET_CITY] = {MAP_GROUP(VIOLET_CITY), MAP_NUM(VIOLET_CITY), HEAL_LOCATION_VIOLET_CITY},
@@ -640,6 +662,9 @@ bool8 LoadRegionMapGfx(void)
             //Hoenn
             if(mapNumber == 2)
                 DecompressAndCopyTileDataToVram(sRegionMap->bgNum, sRegionMapBg_GfxLZ, 0, 0, 0);
+            //Sevii
+            if(mapNumber == 3)
+                DecompressAndCopyTileDataToVram(sRegionMap->bgNum, sRegionMapBg_GfxLZ_Sevii, 0, 0, 0);
         }
         else {
             //Kanto
@@ -651,6 +676,9 @@ bool8 LoadRegionMapGfx(void)
             //Hoenn
             if(mapNumber == 2)
                 LZ77UnCompVram(sRegionMapBg_GfxLZ, (u16 *)BG_CHAR_ADDR(2));
+            //Sevii
+            if(mapNumber == 3)
+                LZ77UnCompVram(sRegionMapBg_GfxLZ_Sevii, (u16 *)BG_CHAR_ADDR(2));
         }
         break;
     case 1:
@@ -666,6 +694,9 @@ bool8 LoadRegionMapGfx(void)
                 //Hoenn
                 if(mapNumber == 2)
                     DecompressAndCopyTileDataToVram(sRegionMap->bgNum, sRegionMapBg_TilemapLZ, 0, 0, 1);
+                //Sevii
+                if(mapNumber == 3)
+                    DecompressAndCopyTileDataToVram(sRegionMap->bgNum, sRegionMapBg_TilemapLZ_Sevii, 0, 0, 1);
             }
         }
         else
@@ -679,6 +710,9 @@ bool8 LoadRegionMapGfx(void)
             //Hoenn
             if(mapNumber == 2)
                 LZ77UnCompVram(sRegionMapBg_TilemapLZ, (u16 *)BG_SCREEN_ADDR(28));
+            //Sevii
+            if(mapNumber == 3)
+                LZ77UnCompVram(sRegionMapBg_TilemapLZ_Sevii, (u16 *)BG_SCREEN_ADDR(28));
         }
         break;
     case 2:
@@ -692,6 +726,9 @@ bool8 LoadRegionMapGfx(void)
             //Hoenn
             if(mapNumber == 2)
                 LoadPalette(sRegionMapBg_Pal, BG_PLTT_ID(7), 3 * PLTT_SIZE_4BPP);
+            //Sevii
+            if(mapNumber == 3)
+                LoadPalette(sRegionMapBg_Pal_Sevii, BG_PLTT_ID(7), 3 * PLTT_SIZE_4BPP);
         }
         break;
     case 3:
@@ -1097,7 +1134,10 @@ static u16 GetMapSecIdAt(u16 x, u16 y)
     if(mapNumber == 1)
         return sRegionMap_MapSectionLayout_Johto[y][x];
     //Hoenn
-    return sRegionMap_MapSectionLayout[y][x];
+    if(mapNumber == 2)
+        return sRegionMap_MapSectionLayout[y][x];
+    //Sevii
+    return sRegionMap_MapSectionLayout_Sevii[y][x];
 }
 
 static void InitMapBasedOnPlayerLocation(void)
@@ -1268,6 +1308,30 @@ static void InitMapBasedOnPlayerLocation(void)
             y = gRegionMapEntries[sRegionMap->mapSecId].height - 1;
         }
     }
+    //Sevii
+    if(mapNumber == 3) {
+        dimensionScale = mapWidth / gRegionMapEntries_Sevii[sRegionMap->mapSecId].width;
+        if (dimensionScale == 0)
+        {
+            dimensionScale = 1;
+        }
+        x /= dimensionScale;
+        if (x >= gRegionMapEntries_Sevii[sRegionMap->mapSecId].width)
+        {
+            x = gRegionMapEntries_Sevii[sRegionMap->mapSecId].width - 1;
+        }
+
+        dimensionScale = mapHeight / gRegionMapEntries_Sevii[sRegionMap->mapSecId].height;
+        if (dimensionScale == 0)
+        {
+            dimensionScale = 1;
+        }
+        y /= dimensionScale;
+        if (y >= gRegionMapEntries_Sevii[sRegionMap->mapSecId].height)
+        {
+            y = gRegionMapEntries_Sevii[sRegionMap->mapSecId].height - 1;
+        }
+    }
 
     switch (sRegionMap->mapSecId)
     {
@@ -1317,6 +1381,11 @@ static void InitMapBasedOnPlayerLocation(void)
     if(mapNumber == 2) {
         sRegionMap->cursorPosX = gRegionMapEntries[sRegionMap->mapSecId].x + x + MAPCURSOR_X_MIN;
         sRegionMap->cursorPosY = gRegionMapEntries[sRegionMap->mapSecId].y + y + MAPCURSOR_Y_MIN;
+    }
+    //Sevii
+    if(mapNumber == 3) {
+        sRegionMap->cursorPosX = gRegionMapEntries_Sevii[sRegionMap->mapSecId].x + x + MAPCURSOR_X_MIN;
+        sRegionMap->cursorPosY = gRegionMapEntries_Sevii[sRegionMap->mapSecId].y + y + MAPCURSOR_Y_MIN;
     }
 }
 
@@ -1405,6 +1474,24 @@ static void RegionMap_InitializeStateBasedOnSSTidalLocation(void)
                 y = gRegionMapEntries[sRegionMap->mapSecId].height - 1;
             break;
         }
+        //Sevii
+        if(mapNumber == 3) {
+            sRegionMap->mapSecId = mapHeader->regionMapSectionId;
+            dimensionScale = mapHeader->mapLayout->width / gRegionMapEntries_Sevii[sRegionMap->mapSecId].width;
+            if (dimensionScale == 0)
+                dimensionScale = 1;
+            x = xOnMap / dimensionScale;
+            if (x >= gRegionMapEntries_Sevii[sRegionMap->mapSecId].width)
+                x = gRegionMapEntries_Sevii[sRegionMap->mapSecId].width - 1;
+
+            dimensionScale = mapHeader->mapLayout->height / gRegionMapEntries_Sevii[sRegionMap->mapSecId].height;
+            if (dimensionScale == 0)
+                dimensionScale = 1;
+            y = yOnMap / dimensionScale;
+            if (y >= gRegionMapEntries_Sevii[sRegionMap->mapSecId].height)
+                y = gRegionMapEntries_Sevii[sRegionMap->mapSecId].height - 1;
+            break;
+        }
     }
     sRegionMap->playerIsInCave = FALSE;
 
@@ -1422,6 +1509,11 @@ static void RegionMap_InitializeStateBasedOnSSTidalLocation(void)
     if(mapNumber == 2) {
         sRegionMap->cursorPosX = gRegionMapEntries[sRegionMap->mapSecId].x + x + MAPCURSOR_X_MIN;
         sRegionMap->cursorPosY = gRegionMapEntries[sRegionMap->mapSecId].y + y + MAPCURSOR_Y_MIN;
+    }
+    //Sevii
+    if(mapNumber == 3) {
+        sRegionMap->cursorPosX = gRegionMapEntries_Sevii[sRegionMap->mapSecId].x + x + MAPCURSOR_X_MIN;
+        sRegionMap->cursorPosY = gRegionMapEntries_Sevii[sRegionMap->mapSecId].y + y + MAPCURSOR_Y_MIN;
     }
 }
 
@@ -1892,8 +1984,11 @@ u8 *GetMapName(u8 *dest, u16 regionMapId, u16 padLength)
         else if(mapNumber == 1)
             str = StringCopy(dest, gRegionMapEntries_Johto[regionMapId].name);
         //Hoenn
-        else
+        else if(mapNumber == 2)
             str = StringCopy(dest, gRegionMapEntries[regionMapId].name);
+        //Sevii
+        else
+            str = StringCopy(dest, gRegionMapEntries_Sevii[regionMapId].name);
     }
     else
     {
@@ -1953,11 +2048,18 @@ static void GetMapSecDimensions(u16 mapSecId, u16 *x, u16 *y, u16 *width, u16 *h
         *height = gRegionMapEntries_Johto[mapSecId].height;
     }
     //Hoenn
-    else {
+    else if(mapNumber == 2) {
         *x = gRegionMapEntries[mapSecId].x;
         *y = gRegionMapEntries[mapSecId].y;
         *width = gRegionMapEntries[mapSecId].width;
         *height = gRegionMapEntries[mapSecId].height;
+    }
+    //Sevii
+    else {
+        *x = gRegionMapEntries_Sevii[mapSecId].x;
+        *y = gRegionMapEntries_Sevii[mapSecId].y;
+        *width = gRegionMapEntries_Sevii[mapSecId].width;
+        *height = gRegionMapEntries_Sevii[mapSecId].height;
     }
 }
 
@@ -2277,6 +2379,38 @@ static void CreateFlyDestIcons(void)
     //Hoenn
     if (mapNumber == 2) {
         for (mapSecId = MAPSEC_LITTLEROOT_TOWN; mapSecId <= MAPSEC_EVER_GRANDE_CITY; mapSecId++)
+        {
+            GetMapSecDimensions(mapSecId, &x, &y, &width, &height);
+            x = (x + MAPCURSOR_X_MIN) * 8 + 4;
+            y = (y + MAPCURSOR_Y_MIN) * 8 + 4;
+
+            if (width == 2)
+                shape = SPRITE_SHAPE(16x8);
+            else if (height == 2)
+                shape = SPRITE_SHAPE(8x16);
+            else
+                shape = SPRITE_SHAPE(8x8);
+
+            spriteId = CreateSprite(&sFlyDestIconSpriteTemplate, x, y, 10);
+            if (spriteId != MAX_SPRITES)
+            {
+                gSprites[spriteId].oam.shape = shape;
+
+                if (FlagGet(canFlyFlag))
+                    gSprites[spriteId].callback = SpriteCB_FlyDestIcon;
+                else
+                    shape += 3;
+
+                StartSpriteAnim(&gSprites[spriteId], shape);
+                gSprites[spriteId].sIconMapSec = mapSecId;
+            }
+            canFlyFlag++;
+        }
+    }
+
+    //Sevii
+    if (mapNumber == 3) {
+        for (mapSecId = MAPSEC_ONE_ISLAND; mapSecId <= MAPSEC_SIX_ISLAND; mapSecId++)
         {
             GetMapSecDimensions(mapSecId, &x, &y, &width, &height);
             x = (x + MAPCURSOR_X_MIN) * 8 + 4;

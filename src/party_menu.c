@@ -96,6 +96,7 @@ enum {
     MENU_KANTO,
     MENU_JOHTO,
     MENU_HOENN,
+    MENU_SEVII,
     MENU_FIELD_MOVES
 };
 
@@ -481,6 +482,7 @@ static void CursorCb_Toss(u8);
 static void CursorCb_Kanto(u8);
 static void CursorCb_Johto(u8);
 static void CursorCb_Hoenn(u8);
+static void CursorCb_Sevii(u8);
 static void CursorCb_FieldMove(u8);
 static bool8 SetUpFieldMove_Surf(void);
 static bool8 SetUpFieldMove_Fly(void);
@@ -6442,6 +6444,7 @@ static void SetRegionSelectionActions()
     AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_KANTO);
     AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_JOHTO);
     AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_HOENN);
+    AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_SEVII);
 }
 
 static void CursorCb_Kanto(u8 taskId)
@@ -6464,6 +6467,14 @@ static void CursorCb_Hoenn(u8 taskId)
 {
     PlaySE(SE_SELECT);
     SetMapGraphics(2);
+    gPartyMenu.exitCallback = CB2_OpenFlyMap;
+    Task_ClosePartyMenu(taskId);
+}
+
+static void CursorCb_Sevii(u8 taskId)
+{
+    PlaySE(SE_SELECT);
+    SetMapGraphics(3);
     gPartyMenu.exitCallback = CB2_OpenFlyMap;
     Task_ClosePartyMenu(taskId);
 }

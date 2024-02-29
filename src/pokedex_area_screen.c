@@ -39,6 +39,9 @@
 //Johto map groups
 #define MAP_GROUP_JOHTO_TOWNS_AND_ROUTES MAP_GROUP(NEW_BARK_TOWN)
 #define MAP_GROUP_JOHTO_DUNGEONS MAP_GROUP(UNION_CAVE_1F)
+//Sevii map groups
+#define MAP_GROUP_SEVII_TOWNS_AND_ROUTES MAP_GROUP(ONE_ISLAND)
+#define MAP_GROUP_SEVII_DUNGEONS MAP_GROUP(ONE_ISLAND_KINDLE_ROAD_EMBER_SPA)
 
 #define AREA_SCREEN_WIDTH 32
 #define AREA_SCREEN_HEIGHT 20
@@ -294,6 +297,10 @@ static void FindMapsWithMon(u16 species)
                     if(mapNumber == 2)
                         SetAreaHasMon(sFeebasData[i][1], sFeebasData[i][2]);
                     break;
+                case MAP_GROUP_SEVII_TOWNS_AND_ROUTES:
+                    if(mapNumber == 3)
+                        SetAreaHasMon(sFeebasData[i][1], sFeebasData[i][2]);
+                    break;
                 case MAP_GROUP_KANTO_DUNGEONS:
                     if(mapNumber == 0)
                         SetSpecialMapHasMon(sFeebasData[i][1], sFeebasData[i][2]);
@@ -305,6 +312,10 @@ static void FindMapsWithMon(u16 species)
                 case MAP_GROUP_DUNGEONS:
                 case MAP_GROUP_SPECIAL_AREA:
                     if(mapNumber == 2)
+                        SetSpecialMapHasMon(sFeebasData[i][1], sFeebasData[i][2]);
+                    break;
+                case MAP_GROUP_SEVII_DUNGEONS:
+                    if(mapNumber == 3)
                         SetSpecialMapHasMon(sFeebasData[i][1], sFeebasData[i][2]);
                     break;
                 }
@@ -330,6 +341,10 @@ static void FindMapsWithMon(u16 species)
                     if(mapNumber == 2)
                         SetAreaHasMon(gWildMonHeaders[i].mapGroup, gWildMonHeaders[i].mapNum);
                     break;
+                case MAP_GROUP_SEVII_TOWNS_AND_ROUTES:
+                    if(mapNumber == 3)
+                        SetAreaHasMon(gWildMonHeaders[i].mapGroup, gWildMonHeaders[i].mapNum);
+                    break;
                 case MAP_GROUP_KANTO_DUNGEONS:
                     if(mapNumber == 0)
                         SetSpecialMapHasMon(gWildMonHeaders[i].mapGroup, gWildMonHeaders[i].mapNum);
@@ -341,6 +356,10 @@ static void FindMapsWithMon(u16 species)
                 case MAP_GROUP_DUNGEONS:
                 case MAP_GROUP_SPECIAL_AREA:
                     if(mapNumber == 2)
+                        SetSpecialMapHasMon(gWildMonHeaders[i].mapGroup, gWildMonHeaders[i].mapNum);
+                    break;
+                case MAP_GROUP_SEVII_DUNGEONS:
+                    if(mapNumber == 3)
                         SetSpecialMapHasMon(gWildMonHeaders[i].mapGroup, gWildMonHeaders[i].mapNum);
                     break;
                 }
@@ -641,7 +660,6 @@ void ShowPokedexAreaScreen(u16 species, u8 *screenSwitchState, u8 mapNum)
 
 static void Task_ShowPokedexAreaScreen(u8 taskId)
 {
-    //Hoenn
     SetMapGraphics(mapNumber);
     
     switch (gTasks[taskId].tState)
@@ -664,6 +682,9 @@ static void Task_ShowPokedexAreaScreen(u8 taskId)
         //Hoenn
         if(mapNumber == 2)
             LoadPokedexAreaMapGfx(&sPokedexAreaMapTemplate);
+        //Sevii
+        if(mapNumber == 3)
+            LoadPokedexAreaMapGfx_Sevii(&sPokedexAreaMapTemplate);
         StringFill(sPokedexAreaScreen->charBuffer, CHAR_SPACE, 16);
         break;
     case 2:
@@ -811,6 +832,15 @@ static void CreateAreaMarkerSprites(void)
             y = 8 * (gRegionMapEntries[mapSecId].y) + 28;
             x += 4 * (gRegionMapEntries[mapSecId].width - 1);
             y += 4 * (gRegionMapEntries[mapSecId].height - 1);
+            spriteId = CreateSprite(&sAreaMarkerSpriteTemplate, x, y, 0);
+        }
+        //Sevii
+        if(mapNumber == 3) {
+            mapSecId = sPokedexAreaScreen->specialAreaRegionMapSectionIds[i];
+            x = 8 * (gRegionMapEntries_Sevii[mapSecId].x + 1) + 4;
+            y = 8 * (gRegionMapEntries_Sevii[mapSecId].y) + 28;
+            x += 4 * (gRegionMapEntries_Sevii[mapSecId].width - 1);
+            y += 4 * (gRegionMapEntries_Sevii[mapSecId].height - 1);
             spriteId = CreateSprite(&sAreaMarkerSpriteTemplate, x, y, 0);
         }
         if (spriteId != MAX_SPRITES)

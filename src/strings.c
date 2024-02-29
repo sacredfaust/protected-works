@@ -945,6 +945,7 @@ const u8 gText_CheckRegionMaps[] = _("Check the region maps.");
 const u8 gText_CheckMapOfKanto[] = _("Check the map of the KANTO region.");
 const u8 gText_CheckMapOfJohto[] = _("Check the map of the JOHTO region.");
 const u8 gText_CheckMapOfHoenn[] = _("Check the map of the HOENN region.");
+const u8 gText_CheckMapOfSevii[] = _("Check the map of the SEVII region.");
 const u8 gText_CheckPokemonInDetail[] = _("Check POKéMON in detail.");
 const u8 gText_CallRegisteredTrainer[] = _("Call a registered TRAINER.");
 const u8 gText_CheckObtainedRibbons[] = _("Check obtained RIBBONS.");
@@ -1564,6 +1565,7 @@ const u8 gText_XSentOverY[] = _("{STR_VAR_1} sent over {STR_VAR_3}.");
 const u8 gText_TakeGoodCareOfX[] = _("Take good care of {STR_VAR_3}!");
 const u8 gText_Kanto[] = _("KANTO");
 const u8 gText_Johto[] = _("JOHTO");
+const u8 gText_Sevii_Menu[] = _("SEVII");
 
 // Easy chat group names
 const u8 gEasyChatGroupName_Pokemon[] = _("POKéMON");

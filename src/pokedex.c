@@ -3525,13 +3525,13 @@ static void Task_SwitchScreensFromAreaScreen(u8 taskId)
             break;
         case 3:
             if(mapNumber == 0)
-                mapNumber = 2;
+                mapNumber = 3;
             else
                 mapNumber--;
             gTasks[taskId].func = Task_LoadAreaScreen;
             break;
         case 4:
-            if(mapNumber == 2)
+            if(mapNumber == 3)
                 mapNumber = 0;
             else
                 mapNumber++;

@@ -679,6 +679,7 @@ struct
     [MENU_KANTO] = {gText_Kanto, CursorCb_Kanto},
     [MENU_JOHTO] = {gText_Johto, CursorCb_Johto},
     [MENU_HOENN] = {gText_Hoenn, CursorCb_Hoenn},
+    [MENU_SEVII] = {gText_Sevii_Menu, CursorCb_Sevii},
     [MENU_FIELD_MOVES + FIELD_MOVE_CUT] = {gMoveNames[MOVE_CUT], CursorCb_FieldMove},
     [MENU_FIELD_MOVES + FIELD_MOVE_FLASH] = {gMoveNames[MOVE_FLASH], CursorCb_FieldMove},
     [MENU_FIELD_MOVES + FIELD_MOVE_ROCK_SMASH] = {gMoveNames[MOVE_ROCK_SMASH], CursorCb_FieldMove},
