@@ -111,6 +111,7 @@ bool8 MetatileBehavior_IsTrickHousePuzzleDoor(u8);
 bool8 MetatileBehavior_IsRegionMap(u8);
 bool8 MetatileBehavior_IsRegionMapKanto(u8);
 bool8 MetatileBehavior_IsRegionMapJohto(u8);
+bool8 MetatileBehavior_IsRegionMapSevii(u8);
 bool8 MetatileBehavior_IsClosedSootopolisDoor(u8);
 bool8 MetatileBehavior_IsSkyPillarClosedDoor(u8);
 bool8 MetatileBehavior_IsRoulette(u8);

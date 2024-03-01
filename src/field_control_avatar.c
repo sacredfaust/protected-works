@@ -389,6 +389,8 @@ static const u8 *GetInteractedMetatileScript(struct MapPosition *position, u8 me
         return EventScript_RegionMapKanto;
     if (MetatileBehavior_IsRegionMapJohto(metatileBehavior) == TRUE)
         return EventScript_RegionMapJohto;
+    if (MetatileBehavior_IsRegionMapSevii(metatileBehavior) == TRUE)
+        return EventScript_RegionMapSevii;
     if (MetatileBehavior_IsRunningShoesManual(metatileBehavior) == TRUE)
         return EventScript_RunningShoesManual;
     if (MetatileBehavior_IsPictureBookShelf(metatileBehavior) == TRUE)

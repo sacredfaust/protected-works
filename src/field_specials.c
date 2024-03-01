@@ -991,6 +991,13 @@ void FieldShowRegionMapJohto(void)
     SetMainCallback2(CB2_FieldShowRegionMap);
 }
 
+void FieldShowRegionMapSevii(void)
+{
+    SetMapGraphics(3);
+    SetFieldMapNumber(3);
+    SetMainCallback2(CB2_FieldShowRegionMap);
+}
+
 // Task data for Task_PCTurnOnEffect and Task_LotteryCornerComputerEffect
 #define tPaused       data[0] // Never set
 #define tTaskId       data[1]

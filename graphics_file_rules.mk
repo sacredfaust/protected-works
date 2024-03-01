@@ -658,6 +658,7 @@ $(PKNAVOPTIONSGFXDIR)/options.4bpp: $(PKNAVOPTIONSGFXDIR)/region_maps.4bpp \
 									$(PKNAVOPTIONSGFXDIR)/kanto_map.4bpp \
 									$(PKNAVOPTIONSGFXDIR)/johto_map.4bpp \
 									$(PKNAVOPTIONSGFXDIR)/hoenn_map.4bpp \
+									$(PKNAVOPTIONSGFXDIR)/sevii_map.4bpp \
                                     $(PKNAVOPTIONSGFXDIR)/cancel.4bpp
 	@cat $^ >$@
 

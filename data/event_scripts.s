@@ -1364,6 +1364,15 @@ EventScript_RegionMapJohto::
 	releaseall
 	end
 
+EventScript_RegionMapSevii::
+	lockall
+	msgbox Common_Text_LookCloserAtMapSevii, MSGBOX_DEFAULT
+	fadescreen FADE_TO_BLACK
+	special FieldShowRegionMapSevii
+	waitstate
+	releaseall
+	end
+
 Common_EventScript_PlayBrineysBoatMusic::
 	setflag FLAG_DONT_TRANSITION_MUSIC
 	playbgm MUS_SAILING, FALSE

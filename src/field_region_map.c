@@ -169,6 +169,10 @@ static void FieldUpdateRegionMap(void)
                 offset = GetStringCenterAlignXOffset(FONT_NORMAL, gText_Hoenn, 0x38);
                 AddTextPrinterParameterized(WIN_TITLE, FONT_NORMAL, gText_Hoenn, offset, 1, 0, NULL);
             }
+            if(mapNumber == 3) {
+                offset = GetStringCenterAlignXOffset(FONT_NORMAL, gText_Sevii_Menu, 0x38);
+                AddTextPrinterParameterized(WIN_TITLE, FONT_NORMAL, gText_Sevii_Menu, offset, 1, 0, NULL);
+            }
             ScheduleBgCopyTilemapToVram(0);
             DrawStdFrameWithCustomTileAndPalette(WIN_MAPSEC_NAME, FALSE, 0x27, 0xd);
             PrintRegionMapSecName();
