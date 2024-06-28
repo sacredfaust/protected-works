@@ -10600,6 +10600,16 @@
       "secondary_tileset": "gTileset_JohtoCave",
       "border_filepath": "data/layouts/MtSilver_BossRoom/border.bin",
       "blockdata_filepath": "data/layouts/MtSilver_BossRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_YAM_HILLS",
+      "name": "YamHills_Layout",
+      "width": 44,
+      "height": 23,
+      "primary_tileset": "gTileset_JohtoGeneral",
+      "secondary_tileset": "gTileset_AzaleaTown",
+      "border_filepath": "data/layouts/YamHills/border.bin",
+      "blockdata_filepath": "data/layouts/YamHills/map.bin"
     }
   ]
 }
